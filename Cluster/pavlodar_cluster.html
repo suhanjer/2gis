@@ -5,18 +5,18 @@
         <script src="loader.js"></script>
         <link rel="stylesheet" href="MarkerCluster.css" />
         <link rel="stylesheet" href="MarkerCluster.Default.css" />
-        <script src="coordinates.js"></script>
+        <script src="pavlodar_coordinates.js"></script>
     </head>
     <body>
-        <div id="map" style="width: 100%; height: 1000px;"></div>
+        <div id="map" style="width: 100%; height: 600px;"></div>
         <script>
             DG.then(function() {
                 // загрузка кода модуля
                 return DG.plugin('leaflet.markercluster.js');
             }).then(function() {
                 map = DG.map('map', {
-                    center: DG.latLng(43.246988, 76.903344),
-                    zoom: 9
+                    center: DG.latLng(52.259152, 76.935271),
+                    zoom: 10
                 });
 
                 var markers = DG.markerClusterGroup();
